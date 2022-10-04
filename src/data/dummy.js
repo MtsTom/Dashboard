@@ -75,9 +75,9 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do', keyField: 'Open', allowToggle: true },
+  { headerText: 'Para hacer', keyField: 'Open', allowToggle: true },
 
-  { headerText: 'In Progress', keyField: 'InProgress', allowToggle: true },
+  { headerText: 'En progreso', keyField: 'InProgress', allowToggle: true },
 
   {
     headerText: 'Testing',
@@ -86,7 +86,7 @@ export const kanbanGrid = [
     isExpanded: false,
   },
 
-  { headerText: 'Done', keyField: 'Close', allowToggle: true },
+  { headerText: 'Terminadas', keyField: 'Close', allowToggle: true },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
@@ -826,28 +826,28 @@ export const medicalproBranding = {
 
 export const themeColors = [
   {
-    name: 'blue-theme',
-    color: '#1A97F5',
+    name: 'Azul',
+    color: '#3498DB',
   },
   {
-    name: 'green-theme',
+    name: 'Celeste',
     color: '#03C9D7',
   },
   {
-    name: 'purple-theme',
-    color: '#7352FF',
+    name: 'Violeta',
+    color: '#AF7AC5',
   },
   {
-    name: 'red-theme',
-    color: '#FF5C8E',
+    name: 'Rosa',
+    color: '#F48FB1',
   },
   {
-    name: 'indigo-theme',
+    name: 'Índigo',
     color: '#1E4DB7',
   },
   {
+    name: 'Naranja',
     color: '#FB9678',
-    name: 'orange-theme',
   },
 ];
 
