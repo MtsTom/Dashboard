@@ -77,10 +77,10 @@ export const gridOrderStatus = (props) => (
 export const kanbanGrid = [
   { headerText: 'Para hacer', keyField: 'Open', allowToggle: true },
 
-  { headerText: 'En progreso', keyField: 'InProgress', allowToggle: true },
+  { headerText: 'En proceso', keyField: 'InProgress', allowToggle: true },
 
   {
-    headerText: 'Testing',
+    headerText: 'Por aprobar',
     keyField: 'Testing',
     allowToggle: true,
     isExpanded: false,
@@ -639,7 +639,7 @@ export const earningData = [
   },
   {
     icon: <BsBox />,
-    amount: '2.769',
+    amount: '20.769',
     percentage: '+17%',
     title: 'Productos',
     iconColor: 'rgb(255, 244, 229)',
@@ -650,7 +650,7 @@ export const earningData = [
     icon: <BiDollar />,
     amount: '53.998',
     percentage: '+31%',
-    title: 'Ventas',
+    title: 'Ventas anuales',
     iconColor: 'rgb(235, 245, 251)',
     iconBg: 'rgb(52, 152, 219)',
 
