@@ -5,9 +5,11 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+// eslint-disable-next-line import/order
 import { AiFillShopping } from 'react-icons/ai';
 
 const Sidebar = () => {
+  // eslint-disable-next-line operator-linebreak
   const { currentColor, activeMenu, setActiveMenu, screenSize } =
     useStateContext();
 
@@ -17,8 +19,10 @@ const Sidebar = () => {
     }
   };
 
+  // eslint-disable-next-line operator-linebreak
   const activeLink =
     'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white  text-md m-2';
+  // eslint-disable-next-line operator-linebreak
   const normalLink =
     'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
 
@@ -60,8 +64,12 @@ const Sidebar = () => {
                     style={({ isActive }) => ({
                       backgroundColor: isActive ? currentColor : '',
                     })}
-                    className={({ isActive }) =>
-                      isActive ? activeLink : normalLink
+                    // eslint-disable-next-line no-confusing-arrow
+                    className={
+                      ({ isActive }) =>
+                        // eslint-disable-next-line implicit-arrow-linebreak
+                        isActive ? activeLink : normalLink
+                      // eslint-disable-next-line react/jsx-curly-newline
                     }
                   >
                     {link.icon}
